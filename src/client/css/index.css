@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.dashboard-parent-container {
+  width: 100%;
+  height: auto;
+}
+.dashboard-header-container {
+  width: 100vw;
+  height: auto;
+  background: #ffffff;
+}
+.dashboard-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.dashboard-banner-overlay {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  background: #111111;
+  opacity: 0.95;
+}
+.dashboard-profile-div {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.dashboard-profile-img-container {
+  width: 15%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dashboard-profile-img {
+  width: 15em;
+  height: 15em;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: #ffffff;
+  position: relative;
+  animation: profile-image-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.dashboard-profile-details-container {
+  width: 60%;
+  height: auto;
+  margin-left: 4em;
+}
+.dashboard-profile-name-label {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  position: relative;
+  animation: profile-name-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.dashboard-profile-name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #EA0047;
+  position: relative;
+  animation: profile-name-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.dashboard-profile-deatils {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.7em;
+  position: relative;
+  animation: profile-details-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.profile-details-link {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.7em;
+  text-decoration: underline;
+  position: relative;
+  animation: profile-details-link-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.profile-details-link:hover {
+  font-size: 0.95rem;
+  color: #c7f109;
+  line-height: 1.7em;
+  text-decoration: underline;
+}
+
+@keyframes profile-name-animation {
+  0% {top: -100px}
+  100% {top: 0px}
+}
+
+@keyframes profile-image-animation {
+  0% {left: -100px;}
+  100% {left: 0px}
+}
+
+@keyframes profile-details-animation {
+  0% {bottom: -100px;}
+  100% {bottom: 0px}
+}
+
+@keyframes profile-details-link-animation {
+  0% {bottom: -100px;}
+  100% {bottom: 0px}
+}
