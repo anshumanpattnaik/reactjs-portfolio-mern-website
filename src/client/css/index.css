@@ -103,6 +103,22 @@ body {
   line-height: 1.7em;
   text-decoration: underline;
 }
+.social-profile-container {
+  width: 20em;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  margin-left: 2em;
+  margin-top: 11em;
+  border-radius: 30%;
+}
+.social-profile-icon {
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+}
 
 @keyframes profile-name-animation {
   0% {top: -100px}

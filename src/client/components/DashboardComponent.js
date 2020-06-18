@@ -5,6 +5,11 @@ import { connect } from 'react-redux';
 
 import banner from "../images/ic_banner.png";
 import profile from "../images/ic_profile_img.jpg";
+import facebook from "../images/ic_facebook.png";
+import twitter from "../images/ic_twitter.png";
+import github from "../images/ic_github.png";
+import linkedin from "../images/ic_linkedin.png";
+import youtube from "../images/ic_youtube.png";
 
 class DashboardComponent extends React.Component {
     constructor(props) {
@@ -26,6 +31,13 @@ class DashboardComponent extends React.Component {
                     <div className={'dashboard-profile-div'}>
                         <div className={'dashboard-profile-img-container'}>
                             <img src={profile} className={'dashboard-profile-img'}/>
+                            <div className={'social-profile-container'}>
+                                <a href="https://www.facebook.com/hackbotone/" target="_blank"><img src={facebook} className={'social-profile-icon'}/></a>
+                                <a href="https://twitter.com/anspattnaik" target="_blank"><img src={twitter} className={'social-profile-icon'}/></a>
+                                <a href="https://www.linkedin.com/in/anshuman123/" target="_blank"><img src={linkedin} className={'social-profile-icon'}/></a>
+                                <a href="https://github.com/anshumanpattnaik" target="_blank"><img src={github} className={'social-profile-icon'}/></a>
+                                <a href="https://www.youtube.com/anshumanpattnaik" target="_blank"><img src={youtube} className={'social-profile-icon'}/></a>
+                            </div>
                         </div>
                         <div className={'dashboard-profile-details-container'}>
                             <p className={'dashboard-profile-name-label'}>Hello, I'm <span className={'dashboard-profile-name'}>Anshuman Pattnaik</span></p>
