@@ -119,7 +119,118 @@ body {
   height: 2em;
   padding: 1em;
 }
+.dashboard-skill-sets-container {
+  width: 100vw;
+  height: auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+}
+.skills-container {
+  width: 15em;
+  height: 3em;
+  border: 0.5px solid #333;
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  box-shadow: 1px 1px #333;
+  margin-top: 3em;
+}
+.dashboard-skills-label {
+  font-size: 1.2rem;
+  color: #FFF;
+  font-weight: bold;
+}
 
+/*************************SkillSets Styles********************************/
+.skills-parent-container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.skills-sets-container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+}
+.skills-separator-container {
+  width: 1em;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-separator-line {
+  height: 4.5em;
+  border: 0.5px solid #d8d7d7;
+}
+.skills-separator-circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d8d7d7;
+}
+.skills-separator-inner-circle {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 5em;
+  background:#d8d7d7;
+}
+.skills-label-container {
+  width: 35%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.skills-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 2em;
+}
+.skills-items-container {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-item-container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 5em;
+  border: 0.5px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5em;
+  display: block;
+  background: #333;
+}
+.skills-item-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFF;
+}
+.skills-item-container-hide {
+  display: none;
+}
+/*************************************************************************/
+
+/***************Animation Keyframes**************/
 @keyframes profile-name-animation {
   0% {top: -100px}
   100% {top: 0px}

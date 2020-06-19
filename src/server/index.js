@@ -11,6 +11,9 @@ import App from '../client/App';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+var skills_router = require('./skills/skills_controller');
+app.use("/skills", skills_router);
+
 app.use(bodyParser.json());
 app.use(express.static('build/public'));
 

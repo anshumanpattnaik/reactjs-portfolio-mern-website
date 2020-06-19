@@ -1,8 +1,6 @@
 import React from 'react';
 import "../css/index.css";
 
-import { connect } from 'react-redux';
-
 import banner from "../images/ic_banner.png";
 import profile from "../images/ic_profile_img.jpg";
 import facebook from "../images/ic_facebook.png";
@@ -10,6 +8,8 @@ import twitter from "../images/ic_twitter.png";
 import github from "../images/ic_github.png";
 import linkedin from "../images/ic_linkedin.png";
 import youtube from "../images/ic_youtube.png";
+
+import SkillSetsComponent from './SkillSetsComponent';
 
 class DashboardComponent extends React.Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class DashboardComponent extends React.Component {
     }
 
     componentDidMount() {
-        console.log('Dashboard')
+        
     }
 
     render() {
@@ -54,18 +54,15 @@ class DashboardComponent extends React.Component {
                     </div>
                     <img src={banner} className={'dashboard-banner-img'}/>
                 </div>
+                <div className={'dashboard-skill-sets-container'}>
+                    <div className={'skills-container'}>
+                        <span className={'dashboard-skills-label'}>Technical Skills</span>
+                    </div>
+                    <SkillSetsComponent/>
+                </div>
             </div>
         );
     }
 }
 
-const stateProps = state => ({
-    
-});
-
-const dispatchProps = dispatch => ({
-    
-});
-
-//export default connect(null, dispatchProps)(DashboardComponent);
 export default DashboardComponent;
