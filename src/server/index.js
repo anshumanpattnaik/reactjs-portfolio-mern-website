@@ -8,13 +8,18 @@ import { StaticRouter } from 'react-router';
 
 import App from '../client/App';
 
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-var skills_router = require('./skills/skills_controller');
-app.use("/skills", skills_router);
+var skills_route = require('./skills/skills_controller');
+var projects_route = require('./projects/projects_controller');
+
+app.use("/api/projects", projects_route);
+app.use("/api/skills", skills_route);
 
 app.use(bodyParser.json());
+app.use(cors());
 app.use(express.static('build/public'));
 
 app.get('*', (req, res) => {

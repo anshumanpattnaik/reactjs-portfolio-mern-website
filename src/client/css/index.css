@@ -149,7 +149,7 @@ body {
 
 /*************************SkillSets Styles********************************/
 .skills-parent-container {
-  width: 80vw;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -230,6 +230,165 @@ body {
 }
 /*************************************************************************/
 
+/*************************Projects Styles********************************/
+.projects-parent-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  background: #f2f2f2;
+}
+.project-child-container {
+  width: 80em;
+  height: auto;
+}
+.projects-tab-container {
+  width: 100%;
+  height: 8%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-items: center;
+}
+.tab-container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab-container:hover {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tab-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.tab-label:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4c8bf5;
+}
+.tab-selected-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4c8bf5;
+}
+.tab-selected {
+  width: 100%;
+  height: 0.2em;
+  margin: 1em;
+  background: #4c8bf5;
+}
+.tab-unselected {
+  width: 100%;
+  height: 0.2em;
+  margin: 1em;
+  background: #CCC;
+}
+.projects-items-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 0.5rem;
+  margin-top: 0.5em;
+  margin: 0.1em;
+}
+.projects-card-item {
+  display: flex;
+  flex-direction: column;
+}
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2em;
+  color: #333;
+  position: relative;
+  animation: project-title;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.overlay-item-container {
+  display: none;
+}
+.div-thumb-overlay {
+  width: 26.35em;
+  height: 14.8em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.div-thumb-overlay:hover .overlay-item-container {
+  width: 26.35em;
+  height: 14.8em;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  border: 0.5px solid #CCC;
+  background: #FCFCFC;
+}
+.overlay-project-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-readmore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #FFF;
+  animation: project-readmore-container;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.project-readmore-container:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #333;
+  animation: project-readmore-container;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.project-readmore-text {
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5em;
+  border: 1.5px solid #333;
+}
+.project-readmore-text:hover {
+  font-size: 1rem;
+  color: #FFF;
+  padding: 0.5em;
+  border: 1.5px solid #333;
+}
+.projects-thumb-img {
+  width: 100%;
+  min-height: 100%;
+}
+.blank-gap-div {
+  width: 100vw;
+  height: 5em;
+  background: #f2f2f2;
+}
+/*************************************************************************/
+
+
 /***************Animation Keyframes**************/
 @keyframes profile-name-animation {
   0% {top: -100px}
@@ -248,5 +407,15 @@ body {
 
 @keyframes profile-details-link-animation {
   0% {bottom: -100px;}
+  100% {bottom: 0px}
+}
+
+@keyframes project-title {
+  0% {top: -30px}
+  100% {top: 0px}
+}
+
+@keyframes project-readmore-container {
+  0% {bottom: -30px;}
   100% {bottom: 0px}
 }

@@ -10,9 +10,6 @@ import FlatList from 'flatlist-react';
 class SkillSetsComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
     }
 
     componentDidMount() {
