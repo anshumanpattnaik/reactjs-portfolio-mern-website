@@ -388,6 +388,145 @@ body {
 }
 /*************************************************************************/
 
+/*************************************Project Dialog*************************************/
+.project-modal-container {
+  width: 38em;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+}
+.project-modal-thumb {
+  width: 100%;
+  height: auto;
+}
+.project-modal-content-container {
+  width: 100%; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+.project-modal-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.project-modal-description {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.8em;
+  margin-top: 1em;
+  margin-right: 0.4em;
+}
+.project-modal-tech-container {
+  width: 97%;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.1em;
+}
+.tech-stack-text {
+  font-size: 1em;
+  color: #000;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.tech-container-div {
+  padding: 1em;
+  margin: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #f2f2f2;
+  background: #f2f2f2;
+}
+.tech-span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333;
+}
+.project-footer-modal {
+  width: 95%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  border-top: 0.5px solid rgb(214, 214, 214);
+  justify-content: flex-end;
+  align-items: center;
+}
+.image-hyperlink {
+  text-decoration: none;
+}
+.github-site-div {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.5px solid #000;
+  background: #000;
+}
+.github-site-div:hover {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.5px solid #333;
+  background: #333;
+}
+.github-site-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 1em;
+}
+.github-site-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FFF;
+  margin-left: 1em;
+}
+.visit-site-div {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  border: 0.5px solid #4c8bf5;
+  background: #4c8bf5;
+}
+.visit-site-div:hover {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  cursor: pointer;
+  border: 0.5px solid #003a9e;
+  background: #003a9e;
+}
+.visit-site-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 1em;
+}
+.visit-site-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FFF;
+  margin-left: 0.8em;
+}
+/****************************************************************************************/
 
 /***************Animation Keyframes**************/
 @keyframes profile-name-animation {
