@@ -11,6 +11,8 @@ import youtube from "../images/ic_youtube.png";
 
 import SkillSetsComponent from './SkillSetsComponent';
 import ProjectsComponent from './ProjectsComponent';
+import BlogsComponent from './BlogsComponent';
+import ContactsComponent from './ContactsComponent';
 
 class DashboardComponent extends React.Component {
     constructor(props) {
@@ -66,6 +68,18 @@ class DashboardComponent extends React.Component {
                         <span className={'dashboard-skills-label'}>Projects</span>
                     </div>
                     <ProjectsComponent/>
+                </div>
+                <div className={'blogs-parent-container'}>
+                    <div className={'skills-container'}>
+                        <span className={'dashboard-skills-label'}>Blogs</span>
+                    </div>
+                    <BlogsComponent/>
+                </div>
+                <div className={'contacts-parent-container'}>
+                    <div className={'skills-container'}>
+                        <span className={'dashboard-skills-label'}>Contacts</span>
+                    </div>
+                    <ContactsComponent/>
                 </div>
             </div>
         );

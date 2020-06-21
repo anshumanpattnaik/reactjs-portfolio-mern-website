@@ -14,9 +14,11 @@ const PORT = process.env.PORT || 3000;
 
 var skills_route = require('./skills/skills_controller');
 var projects_route = require('./projects/projects_controller');
+var blogs_route = require('./blogs/blogs_controller');
 
 app.use("/api/projects", projects_route);
 app.use("/api/skills", skills_route);
+app.use("/api/blogs", blogs_route);
 
 app.use(bodyParser.json());
 app.use(cors());

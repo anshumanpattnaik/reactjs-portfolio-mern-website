@@ -54,8 +54,6 @@ class ProjectsComponent extends React.Component {
         if (results.length > 0) {
             return (
                 results.map((item) => {
-                    console.log('Type : ' + item.type + " == " + this.state.selectedItem);
-
                     var type = item.type;
                     var tabItem = this.state.selectedItem;
 
@@ -111,7 +109,6 @@ class ProjectsComponent extends React.Component {
         var item = this.state.projectItem;
 
         if (isShow) {
-            console.log('Project : ' + isShow + " == " + JSON.stringify(item));
             return (
                 <Modal
                     isOpen={isShow}
@@ -149,7 +146,7 @@ class ProjectsComponent extends React.Component {
                                         <span className={'youtube-site-text'}>YOUTUBE VIDEO</span>
                                     </div>
                                 </a>
-                                <a href={item.project_link} className={((item.type === 'Web' || item.type === 'Mobile/Web') && item.project_link !== 'N/A' ? 'project-hyperlink' : 'project-hide-hyperlink')} rel="noopener" target="_blank">
+                                <a href={item.project_link} className={((item.type === 'Web' || item.type === 'Mobile/Blog') && item.project_link !== 'N/A' ? 'project-hyperlink' : 'project-hide-hyperlink')} rel="noopener" target="_blank">
                                     <div className={'visit-site-div'}>
                                         <img src={webIcon} className={'visit-site-icon'} />
                                         <span className={'visit-site-text'}>VISIT SITE</span>
@@ -182,7 +179,6 @@ class ProjectsComponent extends React.Component {
                     </div>
                 </div>
                 {this.openProjectDialog()}
-                <div className={'blank-gap-div'}></div>
             </div>
         );
     }

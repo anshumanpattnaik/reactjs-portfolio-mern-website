@@ -303,6 +303,7 @@ body {
   grid-gap: 0.5rem;
   margin-top: 0.5em;
   margin: 0.1em;
+  padding-bottom: 2em;
 }
 .projects-card-item {
   display: flex;
@@ -380,14 +381,107 @@ body {
 }
 .projects-thumb-img {
   width: 100%;
-  min-height: 100%;
-}
-.blank-gap-div {
-  width: 100vw;
-  height: 5em;
-  background: #f2f2f2;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*************************************************************************/
+
+/***************************Blogs Styles*************************/
+.blogs-parent-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  background: #4c8bf5;
+}
+.blogs-parent-contents-container {
+  width: 80vw;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogs-contents-container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.blogs-text {
+  font-size: 1rem;
+  color: #FFF;
+  margin-top: 3em;
+}
+.blogs-poster-container {
+  width: 50em;
+  height: auto;
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogs-poster-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blogs-details-link {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.7em;
+  text-decoration: underline;
+}
+.blogs-details-link:hover {
+  font-size: 0.95rem;
+  color: #c7f109;
+  line-height: 1.7em;
+  text-decoration: underline;
+}
+/****************************************************************/
+
+/**********************Contacts Styles********************/
+.contacts-parent-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(248, 248, 248);
+}
+.contacts-contents-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-social-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+.contact-social-img {
+  width: 3em;
+  height: 3em;
+  margin: 1em;
+}
+.contacts-footer-div {
+  width: 50em;
+  height: 0.5px;
+  margin-top: 3em;
+  background: #CCC;
+}
+.contacts-footer-text {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 2em;
+}
+/*********************************************************/
 
 /*************************************Project Dialog*************************************/
 .project-modal-container {
@@ -582,6 +676,7 @@ body {
   width: auto;
   height: 4em;
 }
+
 /****************************************************************************************/
 
 /***************Animation Keyframes**************/
