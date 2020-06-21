@@ -8,6 +8,7 @@ import { fetchProjects } from '../actions';
 
 import githubIcon from '../images/ic_github_white.png';
 import webIcon from '../images/ic_web_site.png';
+import playstore from '../images/ic_google_playstore.png';
 
 const modalStyles = {
     overlay: {
@@ -53,21 +54,46 @@ class ProjectsComponent extends React.Component {
         if (results.length > 0) {
             return (
                 results.map((item) => {
-                    return (
-                        <div className="projects-card-item">
-                            <div className={'div-thumb-overlay'}>
-                                <div className={'overlay-item-container'}>
-                                    <div className={'overlay-project-div'}>
-                                        <p className={'project-title'}>{item.title}</p>
-                                        <div className={'project-readmore-container'} onClick={this.onSetProjectDialogState.bind(this, true, item)}>
-                                            <span className={'project-readmore-text'}>Read More</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    console.log('Type : ' + item.type + " == " + this.state.selectedItem);
+
+                    var type = item.type;
+                    var tabItem = this.state.selectedItem;
+
+                    if (type.includes(tabItem)) {
+                        return(
+                            <div>{this.renderProjectItems(item)}</div>
+                        );
+                    }
+                })
+            )
+        }
+    }
+
+    renderProjectItems = (item) => {
+        return (
+            <div className="projects-card-item">
+                <div className={'div-thumb-overlay'}>
+                    <div className={'overlay-item-container'}>
+                        <div className={'overlay-project-div'}>
+                            <p className={'project-title'}>{item.title}</p>
+                            <div className={'project-readmore-container'} onClick={this.onSetProjectDialogState.bind(this, true, item)}>
+                                <span className={'project-readmore-text'}>Read More</span>
                             </div>
-                            <img src={item.thumbnail} className={'projects-thumb-img'} />
                         </div>
-                    )
+                    </div>
+                </div>
+                <img src={item.thumbnail} className={'projects-thumb-img'} />
+            </div>
+        )
+    }
+
+    renderAllProjects = (results) => {
+        if (results.length > 0) {
+            return (
+                results.map((item) => {
+                    return(
+                        <div>{this.renderProjectItems(item)}</div>
+                    );
                 })
             )
         }
@@ -106,13 +132,24 @@ class ProjectsComponent extends React.Component {
                                 )}
                             </div>
                             <div className={'project-footer-modal'}>
-                                <a href={item.github_link} className={'image-hyperlink'} rel="noopener" target="_blank">
+                                <a href={item.github_link} className={(item.github_link === 'N/A' ? 'github-hide-hyperlink' : 'github-hyperlink')} rel="noopener" target="_blank">
                                     <div className={'github-site-div'}>
                                         <img src={githubIcon} className={'visit-site-icon'} />
                                         <span className={'github-site-text'}>GITHUB</span>
                                     </div>
                                 </a>
-                                <a href={item.project_link} className={'image-hyperlink'} rel="noopener" target="_blank">
+                                <a href={item.project_link} className={(item.type === 'Mobile/PlayStore' ? 'project-hyperlink' : 'project-hide-hyperlink')} rel="noopener" target="_blank">
+                                    <div className={'play-store-div'}>
+                                        <img src={playstore} className={'play-store-icon'} />
+                                    </div>
+                                </a>
+                                <a href={item.project_link} className={(item.type === 'Mobile/Youtube' ? 'project-hyperlink' : 'project-hide-hyperlink')} rel="noopener" target="_blank">
+                                    <div className={'youtube-site-div'}>
+                                        <img src={webIcon} className={'youtube-site-icon'} />
+                                        <span className={'youtube-site-text'}>YOUTUBE VIDEO</span>
+                                    </div>
+                                </a>
+                                <a href={item.project_link} className={((item.type === 'Web' || item.type === 'Mobile/Web') && item.project_link !== 'N/A' ? 'project-hyperlink' : 'project-hide-hyperlink')} rel="noopener" target="_blank">
                                     <div className={'visit-site-div'}>
                                         <img src={webIcon} className={'visit-site-icon'} />
                                         <span className={'visit-site-text'}>VISIT SITE</span>
@@ -128,7 +165,7 @@ class ProjectsComponent extends React.Component {
 
     render() {
         var results = JSON.parse(JSON.stringify(this.props.projects)).data;
-        //console.log('Projects '+JSON.stringify(this.props.projects)+" == "+JSON.stringify(results));
+        
         return (
             <div className={'projects-parent-container'}>
                 <div className={'project-child-container'}>
@@ -141,7 +178,7 @@ class ProjectsComponent extends React.Component {
                         )}
                     </div>
                     <div className="projects-items-container">
-                        {this.renderProjects(results)}
+                        {this.state.selectedItem === 'All'? this.renderAllProjects(results):this.renderProjects(results)}
                     </div>
                 </div>
                 {this.openProjectDialog()}

@@ -312,6 +312,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 2em;
+  text-align: center;
   color: #333;
   position: relative;
   animation: project-title;
@@ -390,7 +391,7 @@ body {
 
 /*************************************Project Dialog*************************************/
 .project-modal-container {
-  width: 38em;
+  width: 35em;
   height: auto;
   overflow: hidden;
   display: flex;
@@ -418,7 +419,7 @@ body {
   color: #333;
   line-height: 1.8em;
   margin-top: 1em;
-  margin-right: 0.4em;
+  margin-right: 2em;
 }
 .project-modal-tech-container {
   width: 97%;
@@ -457,8 +458,19 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-.image-hyperlink {
+.project-hyperlink {
+  display: block;
   text-decoration: none;
+}
+.project-hide-hyperlink {
+  display: none;
+}
+.github-hyperlink {
+  display: block;
+  text-decoration: none;
+}
+.github-hide-hyperlink {
+  display: none;
 }
 .github-site-div {
   width: 8em;
@@ -525,6 +537,50 @@ body {
   font-weight: bold;
   color: #FFF;
   margin-left: 0.8em;
+}
+.youtube-site-div {
+  width: 10em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  border: 0.5px solid #c4302b;
+  background: #c4302b;
+}
+.youtube-site-div:hover {
+  width: 10em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  cursor: pointer;
+  border: 0.5px solid #e24944;
+  background: #e24944;
+}
+.youtube-site-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 1em;
+}
+.youtube-site-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FFF;
+  margin-left: 0.8em;
+}
+.play-store-div {
+  width: 10em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.play-store-icon {
+  width: auto;
+  height: 4em;
 }
 /****************************************************************************************/
 
