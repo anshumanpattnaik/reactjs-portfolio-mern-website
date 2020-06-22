@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 
 import { fetchSkillSets } from '../actions';
 
-import FlatList from 'flatlist-react';
-
 class SkillSetsComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -26,32 +24,25 @@ class SkillSetsComponent extends React.Component {
         );
     }
 
-    renderTechStacksItems = (item) => {
-        return (
-            <div className={'skills-sets-container'}>
-                <div className={'skills-label-container'}>
-                    <span className={'skills-label'}>{item.label}</span>
-                </div>
-                <div className={'skills-separator-container'}>
-                    <div className={'skills-separator-line'}></div>
-                    <div className={'skills-separator-circle'}>
-                        <div className={'skills-separator-inner-circle'}></div>
-                    </div>
-                </div>
-                <div className={'skills-items-container'}>
-                    {this.renderTechSkills(item.skills)}
-                </div>
-            </div>
-        );
-    }
-
     renderTechStacks = (results) => {
         if (results.length > 0) {
             return (
-                <FlatList
-                    list={results}
-                    renderItem={this.renderTechStacksItems}
-                />
+                results.map(item =>
+                    <div className={'skills-sets-container'}>
+                        <div className={'skills-label-container'}>
+                            <span className={'skills-label'}>{item.label}</span>
+                        </div>
+                        <div className={'skills-separator-container'}>
+                            <div className={'skills-separator-line'}></div>
+                            <div className={'skills-separator-circle'}>
+                                <div className={'skills-separator-inner-circle'}></div>
+                            </div>
+                        </div>
+                        <div className={'skills-items-container'}>
+                            {this.renderTechSkills(item.skills)}
+                        </div>
+                    </div>
+                )
             );
         }
     }
@@ -61,6 +52,7 @@ class SkillSetsComponent extends React.Component {
         return (
             <div className={'skills-parent-container'}>
                 {this.renderTechStacks(results)}
+                <div className={'skills-mobile-gap'}></div>
             </div>
         );
     }
