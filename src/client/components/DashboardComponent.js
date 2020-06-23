@@ -14,7 +14,7 @@ class DashboardComponent extends React.Component {
         super(props);
         this.state = {
             tabItem: ['HOME','SKILLS','PROJECTS','BLOGS'],
-            selectedItem: 'PROJECTS'
+            selectedItem: 'HOME'
         }
     }
 

@@ -13,6 +13,7 @@ import playstore from '../images/ic_google_playstore.png';
 
 const modalStyles = {
     overlay: {
+        zIndex: 2000,
         backgroundColor: 'rgba(52, 52, 52, 0.8)'
     },
     content: {

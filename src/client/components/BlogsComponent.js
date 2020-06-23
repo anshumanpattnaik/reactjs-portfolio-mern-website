@@ -32,6 +32,7 @@ class BlogsComponent extends React.Component {
                         </div>
                     ) : null}
                 </div>
+                <div className={'projects-mobile-items-gap'}></div>
             </div>
         );
     }

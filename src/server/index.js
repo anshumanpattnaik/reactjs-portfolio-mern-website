@@ -25,11 +25,11 @@ app.use(cors());
 app.use(express.static('build/public'));
 
 app.get('*', (req, res) => {
-    var title = "My Portfolio";
+    var title = "My Portfolio | Full Stack Mern Application";
     var description = "";
     var thumb = "";
-    var favicon = "";
-    var link = "";
+    var favicon = "https://assets.hackbotone.com/images/icons/anshuman_pattnaik.jpg";
+    var link = "https://myportfolio.hackbotone.com";
 
     const context = {}
 
@@ -47,6 +47,7 @@ app.get('*', (req, res) => {
             <meta content="IE=edge" http-equiv="X-UA-Compatible">
             <meta content="width=device-width, initial-scale=1" name="viewport">
             <title>${title}</title>
+            <meta name="keywords" content="portfolio, anshuman portfolio, hackbotone, full stack application, mern stack application, portfolio design, portfolio tutorials"/>
             <meta name="description" content="${description}">
         
             <meta name="twitter:card" content="summary_large_image">
