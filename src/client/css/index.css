@@ -336,16 +336,19 @@ html, body {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
+  margin-bottom: 0em;
 }
 .tab-label:hover {
   font-size: 1.2rem;
   font-weight: bold;
   color: #4c8bf5;
+  margin-bottom: 0em;
 }
 .tab-selected-label {
   font-size: 1.2rem;
   font-weight: bold;
   color: #4c8bf5;
+  margin-bottom: 0em;
 }
 .tab-selected {
   width: 100%;
@@ -629,6 +632,40 @@ html, body {
 .github-hide-hyperlink {
   display: none;
 }
+.close-site-div {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.5px solid rgb(236, 118, 118);
+  background: rgb(236, 118, 118);
+}
+.close-site-div:hover {
+  width: 8em;
+  height: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.5px solid rgb(238, 83, 83);
+  background: rgb(238, 83, 83);
+}
+.close-site-icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 1em;
+}
+.close-site-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FFF;
+  margin-left: 1em;
+}
 .github-site-div {
   width: 8em;
   height: 2.5em;
@@ -742,6 +779,9 @@ html, body {
 .skills-mobile-gap {
   display: none;
 }
+.projects-mobile-items-gap {
+  display: none;
+}
 
 /****************************************************************************************/
 
@@ -775,7 +815,7 @@ html, body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background: rgb(255, 255, 255);
   }
   .mobile-footer-container {
@@ -1015,6 +1055,339 @@ html, body {
   }
   .skills-item-container-hide {
     display: none;
+  }
+  .projects-parent-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 2.5em;
+    background: #FFF;
+  }
+  .project-child-container {
+    width: 100%;
+    height: auto;
+  }
+  .projects-tab-container {
+    width: 100%;
+    height: 4em;
+    display: grid;
+    position: fixed;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .tab-container {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: #FFF;
+  }
+  .tab-container:hover {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    background: #FFF;
+  }
+  .tab-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  .tab-label:hover {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4c8bf5;
+    margin-bottom: 1em;
+  }
+  .tab-selected-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4c8bf5;
+    margin-bottom: 1em;
+  }
+  .tab-selected {
+    width: 100%;
+    height: 0.2em;
+    margin: 0em;
+    background: #4c8bf5;
+  }
+  .tab-unselected {
+    width: 100%;
+    height: 0.2em;
+    margin: 0em;
+    background: #CCC;
+  }
+  .projects-items-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-gap: 0rem;
+    margin-top: 0em;
+    margin: 0em;
+    padding-bottom: 0em;
+  }
+  .projects-mobile-items-gap {
+    width: 100%;
+    height: 3.5em;
+    display: block;
+    background: white;
+  }
+  .projects-thumb-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .projects-card-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+  .overlay-item-container {
+    display: none;
+  }
+  .div-thumb-overlay {
+    width: 26.35em;
+    height: 14.8em;
+    position: absolute;
+    display: none;
+    justify-content: center;
+  }
+  .project-modal-container {
+    width: 23.5em;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFF;
+  }
+  .project-modal-thumb {
+    width: 100%;
+    height: auto;
+  }
+  .project-modal-content-container {
+    width: 23em; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+  .project-modal-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .project-modal-description {
+    font-size: 0.7rem;
+    color: #333;
+    line-height: 1.8em;
+    margin-top: 1em;
+    margin-right: 2em;
+  }
+  .project-modal-tech-container {
+    width: 15em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.1em;
+  }
+  .tech-stack-text {
+    font-size: 0.8em;
+    color: #000;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  .tech-container-div {
+    padding: 0.8em;
+    margin: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #f2f2f2;
+    background: #f2f2f2;
+  }
+  .tech-span {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .project-footer-modal {
+    width: 22em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    border-top: 0.5px solid rgb(214, 214, 214);
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .project-hyperlink {
+    display: block;
+    text-decoration: none;
+  }
+  .project-hide-hyperlink {
+    display: none;
+  }
+  .github-hyperlink {
+    display: block;
+    text-decoration: none;
+  }
+  .github-hide-hyperlink {
+    display: none;
+  }
+  .close-site-div {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 0.5px solid rgb(236, 118, 118);
+    background: rgb(236, 118, 118);
+  }
+  .close-site-div:hover {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 0.5px solid rgb(238, 83, 83);
+    background: rgb(238, 83, 83);
+  }
+  .close-site-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 1em;
+  }
+  .close-site-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 0.6em;
+  }
+  .github-site-div {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 0.5px solid #000;
+    background: #000;
+  }
+  .github-site-div:hover {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 0.5px solid #333;
+    background: #333;
+  }
+  .github-site-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.8em;
+  }
+  .github-site-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 0.6em;
+  }
+  .visit-site-div {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    border: 0.5px solid #4c8bf5;
+    background: #4c8bf5;
+  }
+  .visit-site-div:hover {
+    width: 6em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    cursor: pointer;
+    border: 0.5px solid #003a9e;
+    background: #003a9e;
+  }
+  .visit-site-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.8em;
+  }
+  .visit-site-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 0.6em;
+  }
+  .youtube-site-div {
+    width: 8em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    border: 0.5px solid #c4302b;
+    background: #c4302b;
+  }
+  .youtube-site-div:hover {
+    width: 8em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    cursor: pointer;
+    border: 0.5px solid #e24944;
+    background: #e24944;
+  }
+  .youtube-site-icon {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.8em;
+  }
+  .youtube-site-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 0.6em;
+  }
+  .play-store-div {
+    width: 8em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .play-store-icon {
+    width: auto;
+    height: 3em;
   }
 }
 

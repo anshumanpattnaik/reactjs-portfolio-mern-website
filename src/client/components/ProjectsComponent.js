@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 
 import { fetchProjects } from '../actions';
 
+import closeIcon from '../images/ic_close.png';
 import githubIcon from '../images/ic_github_white.png';
 import webIcon from '../images/ic_web_site.png';
 import playstore from '../images/ic_google_playstore.png';
@@ -20,7 +21,7 @@ const modalStyles = {
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        zIndex: 1000,
+        zIndex: 2000,
         padding: '0px',
         borderRadius: '0px',
         transform: 'translate(-50%, -50%)'
@@ -58,7 +59,7 @@ class ProjectsComponent extends React.Component {
                     var tabItem = this.state.selectedItem;
 
                     if (type.includes(tabItem)) {
-                        return(
+                        return (
                             <div>{this.renderProjectItems(item)}</div>
                         );
                     }
@@ -80,7 +81,7 @@ class ProjectsComponent extends React.Component {
                         </div>
                     </div>
                 </div>
-                <img src={item.thumbnail} className={'projects-thumb-img'} />
+                <img src={item.thumbnail} className={'projects-thumb-img'} onClick={this.onSetProjectDialogState.bind(this, true, item)} />
             </div>
         )
     }
@@ -89,7 +90,7 @@ class ProjectsComponent extends React.Component {
         if (results.length > 0) {
             return (
                 results.map((item) => {
-                    return(
+                    return (
                         <div>{this.renderProjectItems(item)}</div>
                     );
                 })
@@ -129,6 +130,10 @@ class ProjectsComponent extends React.Component {
                                 )}
                             </div>
                             <div className={'project-footer-modal'}>
+                                <div className={'close-site-div'} onClick={this.onSetProjectDialogState.bind(this, false)}>
+                                    <img src={closeIcon} className={'close-site-icon'} />
+                                    <span className={'close-site-text'}>CLOSE</span>
+                                </div>
                                 <a href={item.github_link} className={(item.github_link === 'N/A' ? 'github-hide-hyperlink' : 'github-hyperlink')} rel="noopener" target="_blank">
                                     <div className={'github-site-div'}>
                                         <img src={githubIcon} className={'visit-site-icon'} />
@@ -162,7 +167,7 @@ class ProjectsComponent extends React.Component {
 
     render() {
         var results = JSON.parse(JSON.stringify(this.props.projects)).data;
-        
+
         return (
             <div className={'projects-parent-container'}>
                 <div className={'project-child-container'}>
@@ -175,7 +180,9 @@ class ProjectsComponent extends React.Component {
                         )}
                     </div>
                     <div className="projects-items-container">
-                        {this.state.selectedItem === 'All'? this.renderAllProjects(results):this.renderProjects(results)}
+                        <div className={'projects-mobile-items-gap'}></div>
+                        {this.state.selectedItem === 'All' ? this.renderAllProjects(results) : this.renderProjects(results)}
+                        <div className={'projects-mobile-items-gap'}></div>
                     </div>
                 </div>
                 {this.openProjectDialog()}
