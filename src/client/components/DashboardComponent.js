@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/index.css";
 
 import logo from '../images/ic_logo.png';
+import down_arrow from '../images/ic_down_arrow.png';
 
 import ProfileComponent from './ProfileComponent';
 import SkillSetsComponent from './SkillSetsComponent';
@@ -13,7 +14,7 @@ class DashboardComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabItem: ['HOME','SKILLS','PROJECTS','BLOGS'],
+            tabItem: ['HOME', 'SKILLS', 'PROJECTS', 'BLOGS'],
             selectedItem: 'HOME'
         }
     }
@@ -30,24 +31,24 @@ class DashboardComponent extends React.Component {
 
     renderTabContents = () => {
         var tabItem = this.state.selectedItem;
-        if(tabItem === 'HOME'){
-            return(
-                <ProfileComponent/>
-            )
-        } 
-        if(tabItem === 'SKILLS') {
-            return(
-                <SkillSetsComponent/>
+        if (tabItem === 'HOME') {
+            return (
+                <ProfileComponent />
             )
         }
-        if(tabItem === 'PROJECTS') {
-            return(
-                <ProjectsComponent/>
+        if (tabItem === 'SKILLS') {
+            return (
+                <SkillSetsComponent />
             )
         }
-        if(tabItem === 'BLOGS') {
-            return(
-                <BlogsComponent/>
+        if (tabItem === 'PROJECTS') {
+            return (
+                <ProjectsComponent />
+            )
+        }
+        if (tabItem === 'BLOGS') {
+            return (
+                <BlogsComponent />
             )
         }
     }
@@ -64,8 +65,8 @@ class DashboardComponent extends React.Component {
                     </div>
                     <div className={'mobile-footer-container'}>
                         {this.state.tabItem.map(data =>
-                            <div className={this.state.selectedItem === data ?'bottom-menu-item-selected-container':'bottom-menu-item-container'} onClick={this.setSelectedTab.bind(this, data)}>
-                                <span className={this.state.selectedItem === data ?'bottom-menu-selected-item-txt':'bottom-menu-item-txt'}>{data}</span>
+                            <div className={this.state.selectedItem === data ? 'bottom-menu-item-selected-container' : 'bottom-menu-item-container'} onClick={this.setSelectedTab.bind(this, data)}>
+                                <span className={this.state.selectedItem === data ? 'bottom-menu-selected-item-txt' : 'bottom-menu-item-txt'}>{data}</span>
                             </div>
                         )}
                     </div>
@@ -84,6 +85,9 @@ class DashboardComponent extends React.Component {
                         </div>
                     </div>
                     <ProfileComponent />
+                    <div className={'dashboard-down-arrow-container'}>
+                        <a href="#skills" className={'menu-item-txt'}><img src={down_arrow} className={'dashboard-down-arrow'} /></a>
+                    </div>
                     <div id={"skills"} className={'dashboard-skill-sets-container'}>
                         <div className={'skills-container'}>
                             <span className={'dashboard-skills-label'}>Technical Skills</span>

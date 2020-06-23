@@ -1,7 +1,6 @@
 import React from 'react';
 import "../css/index.css";
 
-import banner from "../images/ic_banner.png";
 import profile from "../images/ic_profile_img.jpg";
 import facebook from "../images/ic_facebook.png";
 import twitter from "../images/ic_twitter.png";

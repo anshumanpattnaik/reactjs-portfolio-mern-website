@@ -77,6 +77,21 @@ html, body {
   background-size:contain;
   background-image: url('../images/ic_banner.png');
 }
+.dashboard-down-arrow-container {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-down-arrow {
+  width: 3.5em;
+  height: 3.5em;
+  cursor: pointer;
+}
 .dashboard-banner-overlay {
   width: 100vw;
   height: 100vh;
@@ -787,6 +802,9 @@ html, body {
 
 @media only screen and (max-width: 1000px) {
   .desktop-parent-container {
+    display: none;
+  }
+  .dashboard-down-arrow-container {
     display: none;
   }
   .mobile-parent-container {
