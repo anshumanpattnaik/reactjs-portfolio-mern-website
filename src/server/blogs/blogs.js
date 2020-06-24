@@ -10,8 +10,10 @@ const blogSchema = new mongoose.Schema({
     text: true,
     required: true
   },
-  thumb: [{
-    type: String
-  }]
+  thumbnail: {
+    type: String,
+    text: true,
+    required: true
+  }
 });
 module.exports = mongoose.model("Blogs", blogSchema);
