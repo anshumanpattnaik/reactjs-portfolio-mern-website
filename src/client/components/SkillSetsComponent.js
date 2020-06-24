@@ -17,7 +17,7 @@ class SkillSetsComponent extends React.Component {
     renderTechSkills = (items) => {
         return (
             items.map(data =>
-                <div className={'skills-item-container'}>
+                <div key={data} className={'skills-item-container'}>
                     <span className={'skills-item-text'}>{data}</span>
                 </div>
             )
@@ -28,7 +28,7 @@ class SkillSetsComponent extends React.Component {
         if (results.length > 0) {
             return (
                 results.map(item =>
-                    <div className={'skills-sets-container'}>
+                    <div key={item} className={'skills-sets-container'}>
                         <div className={'skills-label-container'}>
                             <span className={'skills-label'}>{item.label}</span>
                         </div>

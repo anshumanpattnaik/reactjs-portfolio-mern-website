@@ -27,7 +27,7 @@ class BlogsComponent extends React.Component {
                 </p>
                 <div className={'blogs-contents-container'}>
                     {results.length > 0 ? results.map(item =>
-                        <div className={'blogs-poster-container'}>
+                        <div key={item} className={'blogs-poster-container'}>
                             <a href={item.blog_link} className={'blogs-details-link'} target="_blank"><img src={item.thumbnail} className={'blogs-poster-img'} /></a>
                         </div>
                     ) : null}

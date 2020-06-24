@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://192.168.2.11:3000';
+export const BASE_URL = 'http://localhost:9002';
 export const SKILLS_ENDPOINT = '/api/skills';
 export const PROJECTS_ENDPOINT = '/api/projects';
 export const BLOGS_ENDPOINT = '/api/blogs';

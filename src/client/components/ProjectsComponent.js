@@ -125,7 +125,7 @@ class ProjectsComponent extends React.Component {
                             <p className={'tech-stack-text'}>Technology Stack</p>
                             <div className={'project-modal-tech-container'}>
                                 {item.tech_stack.map(tech =>
-                                    <div className={'tech-container-div'}>
+                                    <div key={tech} className={'tech-container-div'}>
                                         <span className={'tech-span'}>{tech}</span>
                                     </div>
                                 )}
@@ -174,7 +174,7 @@ class ProjectsComponent extends React.Component {
                 <div className={'project-child-container'}>
                     <div className={'projects-tab-container'}>
                         {this.state.tabItem.map(data =>
-                            <div className={'tab-container'} onClick={this.setSelectedTab.bind(this, data)}>
+                            <div key={data} className={'tab-container'} onClick={this.setSelectedTab.bind(this, data)}>
                                 <span className={this.state.selectedItem === data ? 'tab-selected-label' : 'tab-label'}>{data}</span>
                                 <div className={this.state.selectedItem === data ? 'tab-selected' : 'tab-unselected'}></div>
                             </div>

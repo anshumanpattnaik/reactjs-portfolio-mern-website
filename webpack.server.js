@@ -9,10 +9,6 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         publicPath: '/build'
     },
-    devServer: {
-        inline: false,
-        contentBase: path.resolve(__dirname, 'build'),
-    },
     module: {
         rules: [
             {

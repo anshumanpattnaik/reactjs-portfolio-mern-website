@@ -65,7 +65,7 @@ class DashboardComponent extends React.Component {
                     </div>
                     <div className={'mobile-footer-container'}>
                         {this.state.tabItem.map(data =>
-                            <div className={this.state.selectedItem === data ? 'bottom-menu-item-selected-container' : 'bottom-menu-item-container'} onClick={this.setSelectedTab.bind(this, data)}>
+                            <div key={data} className={this.state.selectedItem === data ? 'bottom-menu-item-selected-container' : 'bottom-menu-item-container'} onClick={this.setSelectedTab.bind(this, data)}>
                                 <span className={this.state.selectedItem === data ? 'bottom-menu-selected-item-txt' : 'bottom-menu-item-txt'}>{data}</span>
                             </div>
                         )}
