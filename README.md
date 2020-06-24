@@ -16,9 +16,9 @@ git clone https://github.com/anshumanpattnaik/reactjs-portfolio-mern-website.git
 
 cd reactjs-portfolio-mern-website/databases
 
-mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection skills --file skills.json
-mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection projects --file projects.json
-mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection blogs --file blogs.json
+mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection skills --jsonArray --file skills.json
+mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection projects --jsonArray --file projects.json
+mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection blogs --jsonArray --file blogs.json
 `````````````````````````````````````
 
 ### Installation
