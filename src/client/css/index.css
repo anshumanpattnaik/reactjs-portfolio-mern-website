@@ -33,7 +33,7 @@ html, body {
 .menu-bar-container {
   width: 100vw;
   height: 3.5em;
-  z-index: 1000;
+  z-index: 3000;
   position: fixed;
   display: flex;
   flex-direction: row;

@@ -1,0 +1,182 @@
+[{
+  "title": "My Portfolio | Full Stack MERN Application",
+  "timestamp": "1592980488",
+  "date": "June 06, 2020",
+  "thumbnail": "https://assets.hackbotone.com/images/my-portfolio-full-stack-mern-application/Thumbnail.png",
+  "tech_stack": [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "Webpack"
+  ],
+  "type": "Web",
+  "project_link": "https://myportfolio.hackbotone.com/",
+  "github_link": "https://github.com/anshumanpattnaik/reactjs-portfolio-mern-website",
+  "description": "A portfolio site is essential for every software developer to showcase projects and technical skills which demonstrates what you can do based upon your resume."
+},{
+  "title": "Forest Assassin 2D Platformer Game",
+  "timestamp": "1588283414",
+  "date": "May 01, 2020",
+  "thumbnail": "https://assets.hackbotone.com/images/forest-assassin-2d-platformer-game/Thumbnail.png",
+  "tech_stack": [
+    "Unity3D",
+    "WebGL",
+    "C#",
+    "Node.js",
+    "HTML5"
+  ],
+  "type": "Web",
+  "project_link": "https://games.hackbotone.com/forest-assassin/",
+  "github_link": "https://github.com/anshumanpattnaik/unity-2d-forest-assassin-game",
+  "description": "Forest Assassin is a 2D adventure platformer game with easy controls and is developed with Unity3d game engine and is available for both Android & Web platforms."
+},{
+  "title": "Coronavirus (COVID-19) - Full Stack Application",
+  "timestamp": "1586728214",
+  "date": "April 13, 2020",
+  "thumbnail": "https://assets.hackbotone.com/images/coronavirus_covid_19_full_stack_application/Thumbnail.png",
+  "tech_stack": [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "MapBox"
+  ],
+  "type": "Web",
+  "project_link": "https://covid19.hackbotone.com/",
+  "github_link": "https://github.com/anshumanpattnaik/covid19-full-stack-application",
+  "description": "The idea behind this application is to displays the statistics of Coronavirus (COVID-19) around the world and populate the statistics over the map."
+},{
+  "title": "HackbotOne - Full Stack Application",
+  "timestamp": "1577953333",
+  "date": "January 02, 2020",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/hackbotone_thumbnail.png",
+  "tech_stack": [
+    "React.js",
+    "Node.js",
+    "Webpack",
+    "MongoDB"
+  ],
+  "type": "Web",
+  "project_link": "https://hackbotone.com/",
+  "github_link": "https://github.com/anshumanpattnaik/hackbotone-mern-website",
+  "description": "HackbotOne website produce contents from various domains such as Web Hacking, Bug Bounty, Application Development & GameDevelopment."
+},{
+  "title": "Virtual Reality Panorama viewer",
+  "timestamp": "1474494614",
+  "date": "Sep 22, 2016",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/vr_panorama_thumb.png",
+  "tech_stack": [
+    "Unity",
+    "Virtual Reality",
+    "C#"
+  ],
+  "type": "Mobile/Youtube",
+  "project_link": "https://www.youtube.com/watch?v=cPp14W910ZA",
+  "github_link": "N/A",
+  "description": "The idea behind this project is to demonstrate how a user can able to see a panoramic image in virtual reality and the application was built using Unity3d panoramic SDK and build for Android devices."
+},{
+  "title": "Virtual Reality | Google VR SDK",
+  "timestamp": "1488235814",
+  "date": "Feb 28, 2017",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/google_thumb.png",
+  "tech_stack": [
+    "VR SDK",
+    "Android",
+    "Java"
+  ],
+  "type": "Mobile/Youtube",
+  "project_link": "https://www.youtube.com/watch?v=Cqa9Iz06y0M&t=125s",
+  "github_link": "https://github.com/anshumanpattnaik/Android-PanoramaViewer",
+  "description": "The idea behind this project was to demonstrate how we can stream 360 videos using Google VR SDK and the proof of concept was developed using many Youtube 360 videos."
+},{
+  "title": "Android Home Automation System using Arduino",
+  "timestamp": "1474321814",
+  "date": "Oct 30, 2014",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/Android_Arduino_Home_Thumb.png",
+  "tech_stack": [
+    "Java",
+    "Android",
+    "Arduino",
+    "C"
+  ],
+  "type": "Mobile/Youtube",
+  "project_link": "https://www.youtube.com/watch?v=qB12ryYComE&t=10s",
+  "github_link": "N/A",
+  "description": "The idea behind this project is to demonstrate how can we control the home electronic appliances by programming the Arduino microcontroller and control the board using an android application through Bluetooth."
+},{
+  "title": "Twine",
+  "timestamp": "1434059414",
+  "date": "Jun 12, 2015",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/twine_thumb.png",
+  "tech_stack": [
+    "Java",
+    "Android",
+    "Venmo",
+    "Realm",
+    "AWS"
+  ],
+  "type": "Mobile/Blog",
+  "project_link": "https://www.7cstudio.com/twine.html",
+  "github_link": "N/A",
+  "description": "Twine is a payment based android application and the idea behind this application is to exchange money in between users, it supports Venmo payment gateway to transfer the money, this application is only available for the US market."
+},{
+  "title": "Fellow PRAP",
+  "timestamp": "1414623014",
+  "date": "Oct 30, 2014",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/Fellow_PRAP_Thumb.png",
+  "tech_stack": [
+    "Java",
+    "Android",
+    "SQLite",
+    "JSON"
+  ],
+  "type": "Mobile/PlayStore",
+  "project_link": "https://play.google.com/store/apps/details?id=com.mindtree.kefprap",
+  "github_link": "N/A",
+  "description": "This application was developed for the Kaivalya education foundation group and the application was specifically designed & developed for the fellow to appear their internal examination."
+},{
+  "title": "Fellow Register",
+  "timestamp": "1407102614",
+  "date": "Aug 04, 2014",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/Fellow_Register_thumbnail.png",
+  "tech_stack": [
+    "Java",
+    "Android",
+    "SQLite",
+    "JSON"
+  ],
+  "type": "Mobile/PlayStore",
+  "project_link": "https://play.google.com/store/apps/details?id=com.mindtree.keffellowregister",
+  "github_link": "N/A",
+  "description": "This application was developed for the Kaivalya education foundation group and the application has some good features such as Planner, Notes, Calendar & Diary."
+},{
+  "title": "PHP Translation Tool",
+  "timestamp": "1372663333",
+  "date": "JULY 2013",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/PHP_DOM_Parser_Thumb.png",
+  "tech_stack": [
+    "PHP",
+    "HTML",
+    "DOM",
+    "MySQL",
+    "Translation"
+  ],
+  "type": "Web",
+  "project_link": "N/A",
+  "github_link": "https://github.com/anshumanpattnaik/php-dom-parser-translation-tool",
+  "description": "The idea behind this project is to translate the webpages from English to Odia language by parsing the HTML DOM of the webpage and it was a proof of concept in early 2013. "
+},{
+  "title": "English to Odia Dictionary",
+  "timestamp": "1325371814",
+  "date": "Jan 01, 2012",
+  "thumbnail": "https://assets.hackbotone.com/images/portfolio/English_To_OdiaThumb.png",
+  "tech_stack": [
+    "Java",
+    "Android",
+    "Keyboard",
+    "SQLite"
+  ],
+  "type": "Mobile/PlayStore",
+  "project_link": "https://play.google.com/store/apps/details?id=com.ori.dic",
+  "github_link": "N/A",
+  "description": "It's an offline android dictionary by using this application a user can get the English meaning of an Odia word, this application has around 1 Million+ downloads in google play store."
+}]

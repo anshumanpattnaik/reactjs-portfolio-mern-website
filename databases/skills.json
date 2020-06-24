@@ -1,0 +1,66 @@
+[{
+  "tech_stack": "programming-languages",
+  "label": "Programming Languages",
+  "skills": [
+    "Java",
+    "JavaScript",
+    "Golang",
+    "Kotlin",
+    "PHP"
+  ]
+},{
+  "tech_stack": "mobile",
+  "label": "Mobile Platforms",
+  "skills": [
+    "Android",
+    "React-Native"
+  ]
+},{
+  "tech_stack": "front-end",
+  "label": "Web Front End",
+  "skills": [
+    "React/Redux",
+    "HTML5",
+    "CSS3"
+  ]
+},{
+  "tech_stack": "back-end",
+  "label": "Web Back End",
+  "skills": [
+    "Node.js"
+  ]
+},{
+  "tech_stack": "databases",
+  "label": "Databases",
+  "skills": [
+    "MongoDB",
+    "MySQL",
+    "SQLite",
+    "Realm"
+  ]
+},{
+  "tech_stack": "ci-cd",
+  "label": "CI/CD",
+  "skills": [
+    "Docker",
+    "Travis-CI",
+    "Amazon AWS"
+  ]
+},{
+  "tech_stack": "web-mobile-security",
+  "label": "Web/Mobile Security",
+  "skills": [
+    "Burp Suite",
+    "Wireshark",
+    "Nmap",
+    "SqlMap",
+    "Nessus",
+    "Frida"
+  ]
+},{
+  "tech_stack": "blockchain",
+  "label": "Blockchain",
+  "skills": [
+    "Hyperledger Fabric"
+  ]
+}]

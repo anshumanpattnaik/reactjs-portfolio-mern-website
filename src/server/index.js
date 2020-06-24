@@ -26,8 +26,8 @@ app.use(express.static('build/public'));
 
 app.get('*', (req, res) => {
     var title = "My Portfolio | Full Stack Mern Application";
-    var description = "";
-    var thumb = "";
+    var description = "A portfolio site is essential for every software developer to showcase projects and technical skills which demonstrates what you can do based upon your resume.";
+    var thumb = "https://assets.hackbotone.com/images/my-portfolio-full-stack-mern-application/Thumbnail.png";
     var favicon = "https://assets.hackbotone.com/images/icons/anshuman_pattnaik.jpg";
     var link = "https://myportfolio.hackbotone.com";
 
@@ -47,7 +47,7 @@ app.get('*', (req, res) => {
             <meta content="IE=edge" http-equiv="X-UA-Compatible">
             <meta content="width=device-width, initial-scale=1" name="viewport">
             <title>${title}</title>
-            <meta name="keywords" content="portfolio, anshuman portfolio, hackbotone, full stack application, mern stack application, portfolio design, portfolio tutorials"/>
+            <meta name="keywords" content="portfolio, anshuman portfolio, hackbotone, full stack application, web application development, react application, mern application, mern stack application, portfolio design, portfolio tutorials"/>
             <meta name="description" content="${description}">
         
             <meta name="twitter:card" content="summary_large_image">
