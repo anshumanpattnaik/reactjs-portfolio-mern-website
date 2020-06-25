@@ -25,8 +25,8 @@ mongoimport --uri "mongodb://127.0.0.1:27017/portfolio" --collection blogs --jso
 ``````````````````````````````````````
 cd reactjs-portfolio-mern-website
 
-yarn add
-yarn run start
+npm install
+npm run start
 ``````````````````````````````````````
 Open http://localhost:9002 to view it in the browser.
 
