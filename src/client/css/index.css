@@ -112,16 +112,17 @@ html, body {
   flex-direction: row;
 }
 .dashboard-profile-img-container {
-  width: 15%;
   height: auto;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .dashboard-profile-img {
   width: 15em;
   height: 15em;
-  padding: 2px;
+  padding: 1px;
+  margin-top: 3em;
   border: 1px solid #ddd;
   border-radius: 50%;
   background: #ffffff;
@@ -129,6 +130,18 @@ html, body {
   animation: profile-image-animation;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+.social-profile-container {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+}
+.social-profile-icon {
+  width: 2em;
+  height: 2em;
+  padding: 1em;
 }
 .dashboard-profile-details-container {
   width: 60%;
@@ -178,22 +191,6 @@ html, body {
   color: #c7f109;
   line-height: 1.7em;
   text-decoration: underline;
-}
-.social-profile-container {
-  width: 20em;
-  height: 4em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  margin-left: 2em;
-  margin-top: 11em;
-  border-radius: 30%;
-}
-.social-profile-icon {
-  width: 2em;
-  height: 2em;
-  padding: 1em;
 }
 .dashboard-skill-sets-container {
   width: 100vw;
@@ -905,15 +902,18 @@ html, body {
   }
   .dashboard-profile-img-container {
     width: 100%;
-    height: auto;
+    height: 10em;
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
+	margin-top: 2em;
   }
   .dashboard-profile-img {
     width: 10em;
     height: 10em;
-    padding: 2px;
+    padding: 1px;
+	margin-top: 3em;
     border: 1px solid #ddd;
     border-radius: 50%;
     background: #ffffff;
@@ -923,15 +923,11 @@ html, body {
     animation-fill-mode: forwards;
   }
   .social-profile-container {
-    width: 20em;
-    height: 4em;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    margin-left: 0em;
-    margin-top: 8em;
-    border-radius: 30%;
+    margin-top: 1em;
   }
   .social-profile-icon {
     width: 2em;
