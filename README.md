@@ -5,9 +5,6 @@ So I have built my site using react.js as a front end, node.js as a back-end, an
 
 <img src='screenshot/thumbnail.png' />
 
-### Website Link
-[https://myportfolio.hackbotone.com](https://myportfolio.hackbotone.com)
-
 ### MongoDB database import command
 Please import the databases after cloning this repo.
 
